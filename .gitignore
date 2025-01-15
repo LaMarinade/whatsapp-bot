@@ -1,5 +1,5 @@
-.env
 node_modules/
-.wwebjs_auth/
+.env
 groupes.txt
-recupinfogroupes.txt
+.wwebjs_auth/
+
