@@ -1,0 +1,31 @@
+
+// // Code pour récupérer les données des groupes whatsapp
+// client.on('ready', async () => {
+//     console.log('Client prêt !');
+
+//     // Récupération des chats
+//     try {
+//         const chats = await client.getChats();
+
+//         // Affiche tous les chats pour vérifier leur contenu
+//         console.log(`Nombre total de chats : ${chats.length}`);
+//         chats.forEach(chat => {
+//             console.log(`Chat trouvé : Nom : ${chat.name}, ID : ${chat.id._serialized}, Type : ${chat.isGroup ? 'Groupe' : 'Individuel'}`);
+//         });
+
+//         // Filtre les groupes
+//         const groups = chats.filter(chat => chat.isGroup);
+//         console.log(`Nombre total de groupes : ${groups.length}`);
+
+//         if (groups.length > 0) {
+//             console.log('Groupes trouvés :');
+//             groups.forEach(group => {
+//                 console.log(`Nom : ${group.name}, ID : ${group.id._serialized}`);
+//             });
+//         } else {
+//             console.log("Aucun groupe trouvé.");
+//         }
+//     } catch (error) {
+//         console.error('Erreur lors de la récupération des groupes :', error);
+//     }
+// });
