@@ -2,6 +2,20 @@
 const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const cron = require('node-cron');
+const express = require('express'); 
+const app = express(); 
+
+const port = process.env.PORT || 3000; 
+
+app.get('/', (req, res) => {
+    res.send('Bot WhatsApp en cours d\'exécution 🚀');
+});
+
+// Démarre le serveur Express
+app.listen(port, () => {
+    console.log(`Serveur en cours d'exécution sur http://0.0.0.0:${port}`);
+});
+
 
 // Initialisation du client WhatsApp
 const client = new Client({
